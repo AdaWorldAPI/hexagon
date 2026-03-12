@@ -1,0 +1,10 @@
+[package]
+name = "staunen-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "The 6 RISC instruction kernel. XOR, POPCOUNT, MAJORITY, AND/NOT, BLAKE3, THRESHOLD."
+
+[dependencies]
+blake3 = { workspace = true }
