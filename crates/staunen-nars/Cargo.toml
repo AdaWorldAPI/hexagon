@@ -1,0 +1,10 @@
+[package]
+name = "staunen-nars"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Non-axiomatic reasoning without floats: (f,c,k) packed truth, revision, deduction/abduction/induction, TruthGate."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }

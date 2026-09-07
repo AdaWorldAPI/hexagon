@@ -1,0 +1,7 @@
+# x86-64-v3 (AVX2) is the shipping baseline of the whole stack; the
+# ndarray polyfill composes its AVX2 lanes from `__m256` intrinsics and a
+# generic-x86_64 build would SIGILL on them at run time. AVX-512 (v4) is an
+# opt-in: `CARGO_BUILD_RUSTFLAGS='-Ctarget-cpu=x86-64-v4'`. Backend choice
+# is ndarray's and compile-time; this crate never branches on it.
+[target.'cfg(target_arch = "x86_64")']
+rustflags = ["-Ctarget-cpu=x86-64-v3"]

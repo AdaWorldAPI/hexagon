@@ -8,3 +8,8 @@ description = "The 6 RISC instruction kernel. XOR, POPCOUNT, MAJORITY, AND/NOT, 
 
 [dependencies]
 blake3 = { workspace = true }
+# The SIMD polyfill — the ONLY SIMD surface this crate may name. Backend
+# selection (AVX-512 / AVX2 / NEON / scalar) is ndarray's and compile-time;
+# this crate calls `ndarray::simd::*` and never a backend module.
+# `std` only: the hpc-extras tree (p64, fractal) is not needed here.
+ndarray = { path = "../../../ndarray", default-features = false, features = ["std"] }

@@ -1,0 +1,10 @@
+[package]
+name = "staunen-amx"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "AMX / AVX-512 batch bridge: bitpacked (not float) GEMM for batch SPO factorization."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }

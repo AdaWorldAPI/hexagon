@@ -1,0 +1,11 @@
+[package]
+name = "staunen-epiphany"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "The epiphany engine: bundle -> threshold -> unbundle -> rotate, tekamolo-weighted superposition."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }
+staunen-nars = { path = "../staunen-nars" }

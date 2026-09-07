@@ -1,0 +1,16 @@
+[package]
+name = "staunen-bench"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Benchmarks that test the thesis: CPU SIMD vs GPU on the cognitive tasks, not on matrix multiply."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }
+staunen-nsm = { path = "../staunen-nsm" }
+staunen-cam = { path = "../staunen-cam" }
+staunen-bnn = { path = "../staunen-bnn" }
+staunen-nars = { path = "../staunen-nars" }
+staunen-epiphany = { path = "../staunen-epiphany" }
+staunen-amx = { path = "../staunen-amx" }
