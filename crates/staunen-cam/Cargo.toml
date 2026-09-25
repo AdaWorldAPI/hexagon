@@ -1,0 +1,10 @@
+[package]
+name = "staunen-cam"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Content-addressable memory: 48-bit CAM fingerprint, scent index, orthogonal codebook, SPO crystal."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }

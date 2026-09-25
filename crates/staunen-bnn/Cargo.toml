@@ -1,0 +1,10 @@
+[package]
+name = "staunen-bnn"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Binary neural network reinforcement: pentary weights, bit-level Hebbian co-fire, collapse-gate feedback."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }

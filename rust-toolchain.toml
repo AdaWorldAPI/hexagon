@@ -1,0 +1,7 @@
+# Moves in lockstep with the AdaWorldAPI stack (ndarray, lance-graph, OGAR,
+# ruff, tesseract-rs, a2ui-rs): a consumer that path-deps ndarray and any
+# sibling must see ONE MSRV. ndarray's own rust-toolchain.toml carries the
+# bump log and the rationale; this file restates only the channel.
+[toolchain]
+channel = "1.98.1"
+components = ["clippy", "rustfmt"]

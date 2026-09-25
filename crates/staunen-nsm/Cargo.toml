@@ -1,0 +1,10 @@
+[package]
+name = "staunen-nsm"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "DeepNSM semantic primes on CPU: text -> prime weights -> bitpacked fingerprint -> codebook nearest neighbour."
+
+[dependencies]
+staunen-core = { path = "../staunen-core" }
